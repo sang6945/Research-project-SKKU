@@ -1,0 +1,68 @@
+# ===== Global =====
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+**/logs/
+!.gitignore
+
+# ===== IDE =====
+**/.idea/
+**/.vscode/
+*.iml
+*.iws
+*.ipr
+
+# ===== FRONT (Flutter) =====
+/front/.dart_tool/
+/front/.packages
+/front/.pub-cache/
+/front/.flutter-plugins
+/front/.flutter-plugins-dependencies
+/front/.melos_tool/
+
+/front/build/
+/front/ios/Pods/
+/front/android/.gradle/
+/front/android/app/build/
+/front/android/local.properties
+
+# keep project assets included (not ignored)
+!/front/assets/
+!/front/assets/**
+
+# ===== BACK (Spring/Gradle) =====
+/back/.gradle/
+/back/build/
+/back/out/
+/back/nbbuild/
+/back/dist/
+/back/.settings/
+/back/.springBeans/
+/back/.sts4-cache/
+
+/back/bin/
+/back/**/bin/
+/back/**/out/
+
+/back/.classpath
+/back/.project
+/back/.factorypath
+/back/HELP.md
+
+# Gradle wrapper: keep the jar
+!/back/gradle/wrapper/gradle-wrapper.jar
+
+# === Secret & local-only configs (DO NOT COMMIT) ===
+/back/src/main/resources/application-db.properties
+/back/src/main/resources/application-token.properties
+/back/src/main/resources/application-sms.properties
+/back/src/main/resources/application-*.local.properties
+
+# Keystores / certs
+/back/src/main/resources/*.jks
+/back/src/main/resources/*.keystore
+/back/src/main/resources/*.pem
+/back/src/main/resources/*.p12
+
+# OS
+/back/.nb-gradle/
