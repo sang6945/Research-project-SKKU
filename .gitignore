@@ -28,15 +28,39 @@
 /front/assets/**
 
 # ===== (미리) Backend 공통 무시 예시 =====
-# Node/TS
-/back/node_modules/
-/back/.pnpm-store/
-# 환경 파일
-/back/.env
-/back/.env.*
-# Java/Spring
-/back/target/
-# Python
-/back/.venv/
-/back/__pycache__/
-/back/*.pyc
+# ===== BACK (Spring/Gradle) =====
+/back/.gradle/
+/back/build/
+/back/out/
+/back/nbbuild/
+/back/dist/
+/back/.settings/
+/back/.springBeans/
+/back/.sts4-cache/
+
+/back/bin/
+/back/**/bin/
+/back/**/out/
+
+/back/.classpath
+/back/.project
+/back/.factorypath
+/back/HELP.md
+
+# Gradle wrapper: keep the jar
+!/back/gradle/wrapper/gradle-wrapper.jar
+
+# === Secret & local-only configs (DO NOT COMMIT) ===
+/back/src/main/resources/application-db.properties
+/back/src/main/resources/application-token.properties
+/back/src/main/resources/application-sms.properties
+/back/src/main/resources/application-*.local.properties
+
+# Keystores / certs
+/back/src/main/resources/*.jks
+/back/src/main/resources/*.keystore
+/back/src/main/resources/*.pem
+/back/src/main/resources/*.p12
+
+# OS
+/back/.nb-gradle/
